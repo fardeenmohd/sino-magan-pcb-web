@@ -6,8 +6,37 @@ import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck, R
 import Link from "next/link";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sino Magan Indus Global Trade LLP",
+    "url": "https://sinomagan.com",
+    "logo": "https://sinomagan.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8700793327",
+      "contactType": "customer service",
+      "email": "sinomaganindustrade@gmail.com",
+      "areaServed": "IN, US, EU, AE, PL, NL",
+      "availableLanguage": ["English", "Hindi"]
+    },
+    "description": "B2B electronics procurement agency connecting international buyers with verified Indian PCB and PCBA manufacturers.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C44, Old DLF Colony, Sector-14",
+      "addressLocality": "Gurgaon",
+      "addressRegion": "Haryana",
+      "postalCode": "122001",
+      "addressCountry": "IN"
+    }
+  };
+
   return (
     <main className="min-h-screen bg-[#001d3d] text-slate-50 font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-[#001d3d]/90 backdrop-blur-md border-b border-slate-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

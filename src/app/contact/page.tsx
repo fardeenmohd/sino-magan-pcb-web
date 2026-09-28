@@ -4,15 +4,28 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Get in touch with Sino Magan Indus for your PCB and PCBA sourcing requirements. Connect with our global trade team.",
+  title: "Contact Our Procurement Experts",
+  description: "Get a free quote for your PCB and PCBA sourcing requirements. Connect with Sino Magan Indus to access verified electronics manufacturers across India's premier tech hubs.",
+  keywords: [
+    "Contact Sino Magan Indus",
+    "PCB Quote Request",
+    "PCBA Manufacturing Quote",
+    "Electronics Sourcing Agency Contact",
+    "Indian PCB Suppliers Inquiry",
+    "B2B Electronics Trade Contact",
+    "Bengaluru Electronics Sourcing",
+    "Delhi-NCR Manufacturing Connections"
+  ].join(", "),
   alternates: {
     canonical: 'https://sinomagan.com/contact'
   },
   openGraph: {
-    title: "Contact Us | Sino Magan Indus",
-    description: "Get in touch with Sino Magan Indus for your PCB and PCBA sourcing requirements.",
+    title: "Contact Our Electronics Procurement Experts | Sino Magan Indus",
+    description: "Get a fast, accurate quote for your PCB fabrication and assembly BOM from verified Indian manufacturers.",
     url: "https://sinomagan.com/contact",
+    siteName: 'Sino Magan Indus',
+    locale: 'en_US',
+    type: 'website',
   }
 };
 
