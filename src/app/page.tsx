@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ProductCarousel from "@/components/ProductCarousel";
-import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck, Rocket, Smartphone, Settings } from "lucide-react";
+import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck, Rocket, Smartphone, Settings, ClipboardCheck, Scale, Lock } from "lucide-react";
 
 import Link from "next/link";
 
@@ -149,31 +149,58 @@ export default function Home() {
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div className="flex flex-col">
+              <div className="flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
                   <Activity className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
                   Verified Capability Matrix
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">Our team maintains an up-to-date matrix of supplier capabilities, cross-referencing max layer counts, via types, and production capacities to ensure reliability.</p>
+                  <p className="flex-auto">We maintain a live, data-driven matrix of supplier capabilities, cross-referencing max layer counts, via types, and production capacities to ensure perfect BOM matching.</p>
                 </dd>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
                   <PackageCheck className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
                   Vetted National Hubs
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">Focusing exclusively on India's premier electronics manufacturing corridors across Maharashtra, Karnataka, Tamil Nadu, and the NCR.</p>
+                  <p className="flex-auto">We focus exclusively on India's premier electronics manufacturing corridors across Maharashtra, Karnataka, Tamil Nadu, and the NCR to guarantee infrastructure stability.</p>
                 </dd>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
-                  <Link2 className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
-                  Seamless Buyer Matching
+                  <ClipboardCheck className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
+                  On-Site Quality Audits
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">By leveraging deep local relationships and structured supplier data, we significantly reduce lead times for finding the perfect manufacturing partner.</p>
+                  <p className="flex-auto">Our local teams conduct rigorous boots-on-the-ground factory inspections and ISO/IATF compliance checks before any supplier enters our approved network.</p>
+                </dd>
+              </div>
+              <div className="flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
+                  <Lock className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
+                  Strict IP Protection
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
+                  <p className="flex-auto">Your intellectual property is secured through ironclad NDAs and compartmentalized data sharing, ensuring your schematics and gerbers remain completely confidential.</p>
+                </dd>
+              </div>
+              <div className="flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
+                  <Scale className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
+                  Scalable Production
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
+                  <p className="flex-auto">Seamlessly transition from low-volume quick-turn prototyping to high-yield mass production without ever needing to switch your core procurement partner.</p>
+                </dd>
+              </div>
+              <div className="flex flex-col bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
+                  <Link2 className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
+                  Direct Factory Pricing
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
+                  <p className="flex-auto">By eliminating middlemen and leveraging our aggregated buying power, we negotiate aggressive direct-to-factory pricing models on your behalf.</p>
                 </dd>
               </div>
             </dl>
