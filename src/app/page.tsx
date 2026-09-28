@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProductCarousel from "@/components/ProductCarousel";
+import AnimatedCircuit from "@/components/AnimatedCircuit";
 import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck, Rocket, Smartphone, Settings, ClipboardCheck, Scale, Lock } from "lucide-react";
 
 import Link from "next/link";
@@ -63,10 +64,8 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Abstract Background Design */}
-        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-500 via-transparent to-transparent"></div>
-        </div>
+        {/* Animated PCB Circuit Background */}
+        <AnimatedCircuit />
       </section>
 
       {/* Product Carousel Section */}
