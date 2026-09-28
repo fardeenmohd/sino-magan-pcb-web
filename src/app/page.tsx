@@ -26,7 +26,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-b from-[#001d3d] to-slate-900 py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#001d3d] to-slate-900 py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="mx-auto max-w-2xl text-center">
             <span className="text-orange-500 text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
@@ -56,10 +56,10 @@ export default function Home() {
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-500 via-transparent to-transparent"></div>
         </div>
-      </div>
+      </section>
 
       {/* Capabilities Section */}
-      <div id="capabilities" className="py-24 bg-white text-slate-900">
+      <section id="capabilities" className="py-24 bg-white text-slate-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-orange-600 uppercase tracking-wide">Manufacturing Excellence</h2>
@@ -120,10 +120,10 @@ export default function Home() {
             </dl>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Expert Procurement Supplier Network */}
-      <div id="network" className="bg-slate-50 py-24 sm:py-32 border-t border-slate-200">
+      <section id="network" className="bg-slate-50 py-24 sm:py-32 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Expert Procurement Network</h2>
@@ -163,10 +163,10 @@ export default function Home() {
             </dl>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Products & Buyer Profile Section */}
-      <div className="bg-white py-24 sm:py-32">
+      <section className="bg-white py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
@@ -240,7 +240,7 @@ export default function Home() {
 
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Global Reach Footer */}
       <footer id="contact" className="bg-[#001d3d] py-16 border-t border-slate-800">

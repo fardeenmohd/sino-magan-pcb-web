@@ -1,6 +1,20 @@
 import { MapPin, Phone, Mail, Globe, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with Sino Magan Indus for your PCB and PCBA sourcing requirements. Connect with our global trade team.",
+  alternates: {
+    canonical: 'https://sinomagan.com/contact'
+  },
+  openGraph: {
+    title: "Contact Us | Sino Magan Indus",
+    description: "Get in touch with Sino Magan Indus for your PCB and PCBA sourcing requirements.",
+    url: "https://sinomagan.com/contact",
+  }
+};
 
 export default function ContactPage() {
   return (
@@ -26,7 +40,7 @@ export default function ContactPage() {
       </nav>
 
       {/* Header */}
-      <div className="bg-[#001d3d] py-16">
+      <section className="bg-[#001d3d] py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Let's Talk Electronics Sourcing
@@ -35,10 +49,10 @@ export default function ContactPage() {
             Whether you need turnkey PCBA, high-density bare boards, or electromechanical assemblies, our global trade team is ready to connect you with verified Delhi-NCR manufacturers.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* Contact Section */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
+      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
           {/* Contact Information */}
@@ -156,7 +170,7 @@ export default function ContactPage() {
             </form>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
