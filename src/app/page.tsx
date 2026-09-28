@@ -1,5 +1,8 @@
 import Image from "next/image";
+import ProductCarousel from "@/components/ProductCarousel";
 import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck } from "lucide-react";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,13 +20,13 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-4 md:gap-8">
               <div className="hidden md:flex space-x-8 items-center">
+                <Link href="/products" className="text-sm font-medium hover:text-orange-400 transition-colors">Products</Link>
                 <a href="#capabilities" className="text-sm font-medium hover:text-orange-400 transition-colors">Capabilities</a>
                 <a href="#network" className="text-sm font-medium hover:text-orange-400 transition-colors">Supplier Network</a>
-                <a href="#quality" className="text-sm font-medium hover:text-orange-400 transition-colors">Quality Control</a>
               </div>
-              <a href="/contact" className="bg-orange-500 text-white px-4 py-1.5 md:px-5 md:py-2 rounded text-sm font-bold hover:bg-orange-600 transition-all shadow-md whitespace-nowrap">
+              <Link href="/contact" className="bg-orange-500 text-white px-4 py-1.5 md:px-5 md:py-2 rounded text-sm font-bold hover:bg-orange-600 transition-all shadow-md whitespace-nowrap">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -169,79 +172,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products & Buyer Profile Section */}
+      {/* Product Carousel Section */}
+      <section className="bg-slate-50 border-t border-slate-200">
+        <ProductCarousel />
+      </section>
+
+      {/* Target Buyer Profile Section */}
       <section className="bg-white py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            
-            {/* Products We Provide */}
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 mb-8">Products We Provide</h2>
-              <div className="space-y-6">
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-bold text-[#001d3d] mb-2 flex items-center gap-2">
-                    <span className="text-orange-500">■</span> Bare Printed Circuit Boards
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
-                    High-TG FR4, Aluminum Core for LED/Power, Rogers for RF/Microwave, and specialized Flexible/Rigid-Flex boards. From single-sided to 32+ multilayer complex architectures.
-                  </p>
-                </div>
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-bold text-[#001d3d] mb-2 flex items-center gap-2">
-                    <span className="text-orange-500">■</span> Turnkey PCBA Solutions
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
-                    End-to-end PCB Assembly (SMT, THT/DIP). We provide component sourcing, automated placement, wave soldering, conformal coating, and final IC programming/testing.
-                  </p>
-                </div>
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-bold text-[#001d3d] mb-2 flex items-center gap-2">
-                    <span className="text-orange-500">■</span> Electromechanical Assemblies
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
-                    Beyond the board: cable harnesses, box builds, enclosure integration, and customized retail packaging ready for global export.
-                  </p>
-                </div>
+          <div className="mx-auto max-w-3xl text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">Our Target Buyers</h2>
+            <p className="text-lg text-slate-600">
+              We cater to mid-to-large tier international enterprises seeking to diversify their manufacturing supply chains with reliable Indian partners.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100">
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+                <Globe className="w-6 h-6 text-orange-600" />
               </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">European & Gulf Distributors</h4>
+              <p className="text-sm text-slate-600 leading-relaxed">Leveraging our hubs in Oman, Netherlands, and Poland to provide seamless DDP/CIF logistics for high-volume consumer electronics components.</p>
+            </div>
+            
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100">
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+                <Activity className="w-6 h-6 text-orange-600" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">Medical & Automotive OEMs</h4>
+              <p className="text-sm text-slate-600 leading-relaxed">Sourcing from ISO 13485 and IATF 16949 certified facilities in the NCR region for mission-critical reliability and traceability.</p>
             </div>
 
-            {/* Target Buyers */}
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 mb-8">Our Target Buyers</h2>
-              <p className="text-slate-600 mb-8">
-                We cater to mid-to-large tier international enterprises seeking to diversify their manufacturing supply chains with reliable Indian partners.
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center mt-1">
-                    <Globe className="w-5 h-5 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-900">European & Gulf Distributors</h4>
-                    <p className="text-sm text-slate-600 mt-1">Leveraging our hubs in Oman, Netherlands, and Poland to provide seamless DDP/CIF logistics for high-volume consumer electronics components.</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center mt-1">
-                    <Activity className="w-5 h-5 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-900">Medical & Automotive OEMs</h4>
-                    <p className="text-sm text-slate-600 mt-1">Sourcing from ISO 13485 and IATF 16949 certified facilities in the NCR region for mission-critical reliability.</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center mt-1">
-                    <Zap className="w-5 h-5 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-900">IoT & Telecommunications</h4>
-                    <p className="text-sm text-slate-600 mt-1">Providing advanced HDI, impedance-controlled, and high-frequency boards for the rapidly expanding global 5G and IoT infrastructure markets.</p>
-                  </div>
-                </li>
-              </ul>
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100">
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+                <Zap className="w-6 h-6 text-orange-600" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">IoT & Telecommunications</h4>
+              <p className="text-sm text-slate-600 leading-relaxed">Providing advanced HDI, impedance-controlled, and high-frequency boards for the rapidly expanding global 5G and IoT infrastructure markets.</p>
             </div>
-
           </div>
         </div>
       </section>

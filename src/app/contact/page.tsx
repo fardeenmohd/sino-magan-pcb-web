@@ -31,6 +31,9 @@ export default function ContactPage() {
               </div>
             </Link>
             <div className="flex space-x-8 items-center">
+              <Link href="/products" className="text-sm font-medium text-slate-300 hover:text-white transition-colors hidden md:block">
+                Products
+              </Link>
               <Link href="/" className="text-sm font-medium text-slate-300 hover:text-white transition-colors flex items-center gap-2">
                 <ArrowLeft className="w-4 h-4" /> Back to Home
               </Link>
