@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ProductCarousel from "@/components/ProductCarousel";
-import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck } from "lucide-react";
+import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck, Rocket, Smartphone, Settings } from "lucide-react";
 
 import Link from "next/link";
 
@@ -189,8 +189,8 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
                 <Globe className="w-6 h-6 text-orange-600" />
               </div>
@@ -198,7 +198,7 @@ export default function Home() {
               <p className="text-sm text-slate-600 leading-relaxed">Leveraging our hubs in Oman, Netherlands, and Poland to provide seamless DDP/CIF logistics for high-volume consumer electronics components.</p>
             </div>
             
-            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100">
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
                 <Activity className="w-6 h-6 text-orange-600" />
               </div>
@@ -206,12 +206,36 @@ export default function Home() {
               <p className="text-sm text-slate-600 leading-relaxed">Sourcing from ISO 13485 and IATF 16949 certified facilities across India's major industrial zones for mission-critical reliability and traceability.</p>
             </div>
 
-            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100">
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
                 <Zap className="w-6 h-6 text-orange-600" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">IoT & Telecommunications</h4>
               <p className="text-sm text-slate-600 leading-relaxed">Providing advanced HDI, impedance-controlled, and high-frequency boards for the rapidly expanding global 5G and IoT infrastructure markets.</p>
+            </div>
+
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+                <Rocket className="w-6 h-6 text-orange-600" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">Aerospace & Defense</h4>
+              <p className="text-sm text-slate-600 leading-relaxed">Delivering high-reliability, MIL-SPEC compliant PCBs for avionics and defense systems. AS9100 certified manufacturing capabilities available for stringent global standards.</p>
+            </div>
+
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+                <Smartphone className="w-6 h-6 text-orange-600" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">Consumer Electronics Brands</h4>
+              <p className="text-sm text-slate-600 leading-relaxed">Supporting massive scaling for smart home devices and wearables. We provide cost-effective turnkey PCBA sourcing shipped directly to your global assembly lines in the USA and Southeast Asia.</p>
+            </div>
+
+            <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
+                <Settings className="w-6 h-6 text-orange-600" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-3">Industrial Automation</h4>
+              <p className="text-sm text-slate-600 leading-relaxed">Procuring heavy-copper and high-TG boards built to withstand extreme temperatures and mechanical stress for smart factories across Germany, Japan, and North America.</p>
             </div>
           </div>
         </div>
