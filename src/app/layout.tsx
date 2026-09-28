@@ -58,6 +58,8 @@ export const metadata: Metadata = {
   }
 };
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -65,7 +67,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-50 text-slate-900`}>{children}</body>
+      <body className={`${inter.className} bg-slate-50 text-slate-900`}>
+        {children}
+        <ScrollToTop />
+      </body>
     </html>
   );
 }
