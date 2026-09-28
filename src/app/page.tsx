@@ -10,8 +10,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Sino Magan Indus Global Trade LLP",
-    "url": "https://sinomagan.com",
-    "logo": "https://sinomagan.com/logo.png",
+    "url": "https://sinomaganelectronics.vercel.app",
+    "logo": "https://sinomaganelectronics.vercel.app/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-8700793327",
@@ -323,7 +323,7 @@ export default function Home() {
                 <li><span className="text-orange-500 mr-2">📍</span> C44, Old DLF Colony, Sector-14, Gurgaon, Haryana, India</li>
                 <li><span className="text-orange-500 mr-2">📞</span> +91 8700793327</li>
                 <li><span className="text-orange-500 mr-2">✉️</span> sinomaganindustrade@gmail.com</li>
-                <li><span className="text-orange-500 mr-2">🌐</span> www.sinomagan.com</li>
+                <li><span className="text-orange-500 mr-2">🌐</span> sinomaganelectronics.vercel.app</li>
               </ul>
             </div>
 

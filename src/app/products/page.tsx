@@ -26,13 +26,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Electronics Procurement Products & Capabilities",
     description: "Source high-quality Bare PCBs, Turnkey PCBA, and Electromechanical Assemblies from verified manufacturers in India's top tech hubs.",
-    url: 'https://sinomagan.com/products',
+    url: 'https://sinomaganelectronics.vercel.app/products',
     siteName: 'Sino Magan Indus',
     locale: 'en_US',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://sinomagan.com/products'
+    canonical: 'https://sinomaganelectronics.vercel.app/products'
   }
 };
 

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sinomagan.com",
+    url: "https://sinomaganelectronics.vercel.app",
     title: "Sino Magan Indus | PCB & Electronics Global Trade",
     description: "Bridging Markets. Delivering Trust in Electronics Manufacturing. Connecting mid-tier international buyers with verified Indian PCB manufacturers.",
     siteName: "Sino Magan Indus",

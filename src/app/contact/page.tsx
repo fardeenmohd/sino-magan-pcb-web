@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "Delhi-NCR Manufacturing Connections"
   ].join(", "),
   alternates: {
-    canonical: 'https://sinomagan.com/contact'
+    canonical: 'https://sinomaganelectronics.vercel.app/contact'
   },
   openGraph: {
     title: "Contact Our Electronics Procurement Experts | Sino Magan Indus",
     description: "Get a fast, accurate quote for your PCB fabrication and assembly BOM from verified Indian manufacturers.",
-    url: "https://sinomagan.com/contact",
+    url: "https://sinomaganelectronics.vercel.app/contact",
     siteName: 'Sino Magan Indus',
     locale: 'en_US',
     type: 'website',
