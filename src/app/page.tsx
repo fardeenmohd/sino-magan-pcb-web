@@ -23,6 +23,7 @@ export default function Home() {
                 <Link href="/products" className="text-sm font-medium hover:text-orange-400 transition-colors">Products</Link>
                 <a href="#capabilities" className="text-sm font-medium hover:text-orange-400 transition-colors">Capabilities</a>
                 <a href="#network" className="text-sm font-medium hover:text-orange-400 transition-colors">Supplier Network</a>
+                <a href="#partners" className="text-sm font-medium hover:text-orange-400 transition-colors">Partners</a>
               </div>
               <Link href="/contact" className="bg-orange-500 text-white px-4 py-1.5 md:px-5 md:py-2 rounded text-sm font-bold hover:bg-orange-600 transition-all shadow-md whitespace-nowrap">
                 Contact
@@ -52,8 +53,11 @@ export default function Home() {
               <Link href="/products" className="rounded-md bg-orange-500 px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-all text-center w-full sm:w-auto">
                 See Products
               </Link>
+              <a href="#partners" className="rounded-md border border-white/20 px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-white/10 transition-all text-center w-full sm:w-auto">
+                Our Partners
+              </a>
               <a href="#network" className="text-sm font-semibold leading-6 text-white hover:text-orange-400 transition-colors flex items-center gap-2">
-                View Supplier Matrix <Globe className="w-4 h-4" />
+                Supplier Matrix <Globe className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -179,11 +183,11 @@ export default function Home() {
 
 
 
-      {/* Target Buyer Profile Section */}
-      <section className="bg-white py-24 sm:py-32">
+      {/* Global Partners Section */}
+      <section id="partners" className="bg-white py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">Our Target Buyers</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-4">Our Global Partners</h2>
             <p className="text-lg text-slate-600">
               We cater to mid-to-large tier international enterprises seeking to diversify their manufacturing supply chains with reliable Indian partners.
             </p>
