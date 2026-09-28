@@ -118,13 +118,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Data-Driven Supplier Network */}
+      {/* Expert Procurement Supplier Network */}
       <div id="network" className="bg-slate-50 py-24 sm:py-32 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Data-Driven Sourcing</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Expert Procurement Network</h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              We utilize proprietary, automated data pipelines (Powered by Google Gemini AI) to continuously scrape, analyze, and qualify manufacturers in the Delhi-NCR region. This guarantees you are matched with suppliers whose capabilities precisely fit your BOM and technical requirements.
+              Our dedicated global procurement team continuously vets, analyzes, and qualifies leading manufacturers in the Delhi-NCR region. We conduct rigorous quality audits to guarantee you are matched with suppliers whose capabilities precisely fit your BOM and technical requirements.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -132,10 +132,10 @@ export default function Home() {
               <div className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
                   <Activity className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
-                  Real-Time Capability Matrix
+                  Verified Capability Matrix
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">Our systems maintain an up-to-date matrix of supplier capabilities, cross-referencing max layer counts, via types, and production capacities.</p>
+                  <p className="flex-auto">Our team maintains an up-to-date matrix of supplier capabilities, cross-referencing max layer counts, via types, and production capacities to ensure reliability.</p>
                 </dd>
               </div>
               <div className="flex flex-col">
@@ -153,7 +153,7 @@ export default function Home() {
                   Seamless Buyer Matching
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">By digitizing and structuring unstructured B2B supplier data, we significantly reduce lead times for finding the perfect manufacturing partner.</p>
+                  <p className="flex-auto">By leveraging deep local relationships and structured supplier data, we significantly reduce lead times for finding the perfect manufacturing partner.</p>
                 </dd>
               </div>
             </dl>
