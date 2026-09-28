@@ -72,7 +72,7 @@ export default function ProductCarousel() {
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Featured Products</h2>
           <p className="mt-2 text-lg text-slate-600">Swipe to explore our procurement capabilities</p>
         </div>
-        <div className="hidden md:flex gap-2">
+        <div className="flex gap-2">
           <button 
             onClick={() => scroll("left")} 
             disabled={!canScrollLeft}

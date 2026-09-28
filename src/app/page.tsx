@@ -48,10 +48,10 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-slate-300">
               Your strategic partner for sourcing high-quality Printed Circuit Boards (PCBs) and PCBA manufacturing. We connect mid-tier international buyers with verified, world-class electronics manufacturers in India's Delhi-NCR tech hub.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#capabilities" className="rounded-md bg-orange-500 px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-all">
-                Explore Capabilities
-              </a>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
+              <Link href="/products" className="rounded-md bg-orange-500 px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-all text-center w-full sm:w-auto">
+                See Products
+              </Link>
               <a href="#network" className="text-sm font-semibold leading-6 text-white hover:text-orange-400 transition-colors flex items-center gap-2">
                 View Supplier Matrix <Globe className="w-4 h-4" />
               </a>
@@ -63,6 +63,11 @@ export default function Home() {
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-500 via-transparent to-transparent"></div>
         </div>
+      </section>
+
+      {/* Product Carousel Section */}
+      <section id="products" className="bg-slate-50 border-b border-slate-200">
+        <ProductCarousel />
       </section>
 
       {/* Capabilities Section */}
@@ -172,10 +177,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Carousel Section */}
-      <section className="bg-slate-50 border-t border-slate-200">
-        <ProductCarousel />
-      </section>
+
 
       {/* Target Buyer Profile Section */}
       <section className="bg-white py-24 sm:py-32">
