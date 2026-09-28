@@ -15,7 +15,7 @@ export default function Home() {
               <a href="#capabilities" className="text-sm font-medium hover:text-orange-400 transition-colors">Capabilities</a>
               <a href="#network" className="text-sm font-medium hover:text-orange-400 transition-colors">Supplier Network</a>
               <a href="#quality" className="text-sm font-medium hover:text-orange-400 transition-colors">Quality Control</a>
-              <a href="#contact" className="bg-orange-500 text-white px-5 py-2 rounded text-sm font-bold hover:bg-orange-600 transition-all shadow-md">Partner With Us</a>
+              <a href="/contact" className="bg-orange-500 text-white px-5 py-2 rounded text-sm font-bold hover:bg-orange-600 transition-all shadow-md">Partner With Us</a>
             </div>
           </div>
         </div>
