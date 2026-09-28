@@ -15,11 +15,15 @@ export default function Home() {
                 <span className="text-[10px] text-orange-500 tracking-widest uppercase font-semibold">PCB Trade Division</span>
               </div>
             </div>
-            <div className="hidden md:flex space-x-8 items-center">
-              <a href="#capabilities" className="text-sm font-medium hover:text-orange-400 transition-colors">Capabilities</a>
-              <a href="#network" className="text-sm font-medium hover:text-orange-400 transition-colors">Supplier Network</a>
-              <a href="#quality" className="text-sm font-medium hover:text-orange-400 transition-colors">Quality Control</a>
-              <a href="/contact" className="bg-orange-500 text-white px-5 py-2 rounded text-sm font-bold hover:bg-orange-600 transition-all shadow-md">Partner With Us</a>
+            <div className="flex items-center gap-4 md:gap-8">
+              <div className="hidden md:flex space-x-8 items-center">
+                <a href="#capabilities" className="text-sm font-medium hover:text-orange-400 transition-colors">Capabilities</a>
+                <a href="#network" className="text-sm font-medium hover:text-orange-400 transition-colors">Supplier Network</a>
+                <a href="#quality" className="text-sm font-medium hover:text-orange-400 transition-colors">Quality Control</a>
+              </div>
+              <a href="/contact" className="bg-orange-500 text-white px-4 py-1.5 md:px-5 md:py-2 rounded text-sm font-bold hover:bg-orange-600 transition-all shadow-md whitespace-nowrap">
+                Contact
+              </a>
             </div>
           </div>
         </div>
