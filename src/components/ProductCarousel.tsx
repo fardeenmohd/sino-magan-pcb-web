@@ -102,22 +102,22 @@ export default function ProductCarousel() {
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {products.map((product) => (
-          <div key={product.id} className="w-[85vw] sm:w-[350px] md:w-[400px] flex-shrink-0 snap-center bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full">
-            {product.icon}
+          <article key={product.id} className="w-[85vw] sm:w-[350px] md:w-[400px] flex-shrink-0 snap-center bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full">
+            <div aria-hidden="true">{product.icon}</div>
             <h3 className="text-xl font-bold text-[#001d3d] mb-3">{product.title}</h3>
             <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">{product.description}</p>
             <div className="mb-8 space-y-2">
               {product.features.map((feature, idx) => (
                 <div key={idx} className="flex items-center text-xs font-semibold text-slate-500">
-                  <span className="text-orange-500 mr-2">✓</span> {feature}
+                  <span className="text-orange-500 mr-2" aria-hidden="true">✓</span> {feature}
                 </div>
               ))}
             </div>
-            <Link href={product.href} className="inline-flex items-center text-sm font-bold text-orange-600 hover:text-orange-700 mt-auto group">
+            <Link href={product.href} className="inline-flex items-center text-sm font-bold text-orange-600 hover:text-orange-700 mt-auto group" aria-label={`View details about ${product.title}`}>
               View Details 
-              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
             </Link>
-          </div>
+          </article>
         ))}
       </div>
       <style dangerouslySetInnerHTML={{__html: `

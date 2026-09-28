@@ -4,8 +4,32 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Products & Capabilities",
-  description: "Explore our comprehensive range of electronics sourcing products, including Bare PCBs, Turnkey PCBA, Electromechanical Assemblies, and specialized HDI/BGA boards.",
+  title: "Electronics Procurement Products | Bare PCBs & Turnkey PCBA",
+  description: "Explore Sino Magan Indus's comprehensive range of B2B electronics sourcing products. We supply Bare PCBs, Turnkey PCBA, Electromechanical Assemblies, and specialized HDI/BGA boards from verified Indian manufacturers.",
+  keywords: [
+    "PCB Manufacturing India",
+    "Turnkey PCBA Solutions",
+    "Bare Printed Circuit Boards",
+    "Electromechanical Assembly Sourcing",
+    "High-Density Interconnect HDI PCB",
+    "BGA Assembly Services",
+    "FR4 Aluminum Core PCB",
+    "Electronics Procurement Services",
+    "B2B PCB Sourcing",
+    "Delhi-NCR PCB Manufacturers",
+    "Surface Mount Technology SMT",
+    "Through-Hole Technology THT",
+    "Custom Box Builds",
+    "Electronics Contract Manufacturing"
+  ].join(", "),
+  openGraph: {
+    title: "Electronics Procurement Products & Capabilities",
+    description: "Source high-quality Bare PCBs, Turnkey PCBA, and Electromechanical Assemblies from verified manufacturers in India's top tech hubs.",
+    url: 'https://sinomagan.com/products',
+    siteName: 'Sino Magan Indus',
+    locale: 'en_US',
+    type: 'website',
+  },
   alternates: {
     canonical: 'https://sinomagan.com/products'
   }
@@ -111,7 +135,7 @@ export default function ProductsPage() {
       <section className="py-16 lg:py-24 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="space-y-24">
           {productDetails.map((product, index) => (
-            <div key={product.id} id={product.id} className={`flex flex-col lg:flex-row gap-12 lg:gap-24 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+            <article key={product.id} id={product.id} className={`flex flex-col lg:flex-row gap-12 lg:gap-24 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
               
               {/* Product Info */}
               <div className="flex-1">
@@ -136,7 +160,7 @@ export default function ProductsPage() {
                 </div>
               </div>
 
-            </div>
+            </article>
           ))}
         </div>
       </section>
