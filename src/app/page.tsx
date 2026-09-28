@@ -46,7 +46,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Your strategic partner for sourcing high-quality Printed Circuit Boards (PCBs) and PCBA manufacturing. We connect mid-tier international buyers with verified, world-class electronics manufacturers in India's Delhi-NCR tech hub.
+              Your strategic partner for sourcing high-quality Printed Circuit Boards (PCBs) and PCBA manufacturing. We connect mid-tier international buyers with verified, world-class electronics manufacturers across India's premier tech hubs, including Bengaluru, Pune, Chennai, and Delhi-NCR.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
               <Link href="/products" className="rounded-md bg-orange-500 px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 transition-all text-center w-full sm:w-auto">
@@ -79,7 +79,7 @@ export default function Home() {
               Comprehensive PCB & PCBA Capabilities
             </p>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Our verified network of Delhi-NCR suppliers is equipped to handle everything from rapid prototyping to high-volume production with advanced technical requirements.
+              Our verified network of top-tier Indian suppliers is equipped to handle everything from rapid prototyping to high-volume production with advanced technical requirements.
             </p>
           </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Expert Procurement Network</h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Our dedicated global procurement team continuously vets, analyzes, and qualifies leading manufacturers in the Delhi-NCR region. We conduct rigorous quality audits to guarantee you are matched with suppliers whose capabilities precisely fit your BOM and technical requirements.
+              Our dedicated global procurement team continuously vets, analyzes, and qualifies leading manufacturers across India's major tech corridors. We conduct rigorous quality audits to guarantee you are matched with suppliers whose capabilities precisely fit your BOM and technical requirements.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -157,10 +157,10 @@ export default function Home() {
               <div className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
                   <PackageCheck className="h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
-                  Vetted Delhi-NCR Hub
+                  Vetted National Hubs
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                  <p className="flex-auto">Focusing exclusively on India's premier electronics manufacturing corridors: Noida, Greater Noida, Okhla, Faridabad, and Manesar.</p>
+                  <p className="flex-auto">Focusing exclusively on India's premier electronics manufacturing corridors across Maharashtra, Karnataka, Tamil Nadu, and the NCR.</p>
                 </dd>
               </div>
               <div className="flex flex-col">
@@ -203,7 +203,7 @@ export default function Home() {
                 <Activity className="w-6 h-6 text-orange-600" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-3">Medical & Automotive OEMs</h4>
-              <p className="text-sm text-slate-600 leading-relaxed">Sourcing from ISO 13485 and IATF 16949 certified facilities in the NCR region for mission-critical reliability and traceability.</p>
+              <p className="text-sm text-slate-600 leading-relaxed">Sourcing from ISO 13485 and IATF 16949 certified facilities across India's major industrial zones for mission-critical reliability and traceability.</p>
             </div>
 
             <div className="bg-orange-50/50 p-8 rounded-3xl border border-orange-100">

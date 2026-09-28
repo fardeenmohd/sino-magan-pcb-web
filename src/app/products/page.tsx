@@ -14,10 +14,9 @@ export const metadata: Metadata = {
     "High-Density Interconnect HDI PCB",
     "BGA Assembly Services",
     "FR4 Aluminum Core PCB",
-    "Electronics Procurement Services",
     "B2B PCB Sourcing",
-    "Delhi-NCR PCB Manufacturers",
-    "Surface Mount Technology SMT",
+    "Indian PCB Manufacturers",
+    "Bengaluru Electronics Sourcing",
     "Through-Hole Technology THT",
     "Custom Box Builds",
     "Electronics Contract Manufacturing"

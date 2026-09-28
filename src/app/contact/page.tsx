@@ -49,7 +49,7 @@ export default function ContactPage() {
             Let's Talk Electronics Sourcing
           </h1>
           <p className="mt-4 text-lg leading-8 text-slate-300 max-w-2xl mx-auto">
-            Whether you need turnkey PCBA, high-density bare boards, or electromechanical assemblies, our global trade team is ready to connect you with verified Delhi-NCR manufacturers.
+            Whether you need turnkey PCBA, high-density bare boards, or electromechanical assemblies, our global trade team is ready to connect you with verified manufacturers across India's premier tech hubs, including Bengaluru, Pune, Chennai, and Delhi-NCR.
           </p>
         </div>
       </section>

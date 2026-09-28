@@ -19,7 +19,9 @@ export const metadata: Metadata = {
     "Indian PCB Suppliers", 
     "Global Trade", 
     "Sino Magan Indus", 
-    "Delhi-NCR Electronics"
+    "Indian Electronics Manufacturing",
+    "Bengaluru PCB Hub",
+    "Pune Electronics Sourcing"
   ],
   authors: [{ name: "Sino Magan Indus Global Trade LLP" }],
   creator: "Sino Magan Indus",
