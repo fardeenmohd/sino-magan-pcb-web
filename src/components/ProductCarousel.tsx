@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { ChevronLeft, ChevronRight, Cpu, Factory, Zap, ShieldCheck } from "lucide-react";
+import { ChevronLeft, ChevronRight, Cpu, Factory, Zap, ShieldCheck, Microchip, Lightbulb } from "lucide-react";
 import Link from "next/link";
 
 const products = [
@@ -36,6 +36,22 @@ const products = [
     icon: <ShieldCheck className="w-12 h-12 text-orange-500 mb-4" />,
     features: ["Blind & Buried Vias", "Microvia Technology", "Fine Pitch BGA", "Rigorous Quality Audits"],
     href: "/products#hdi-bga"
+  },
+  {
+    id: 5,
+    title: "IC & Component Sourcing",
+    description: "Direct procurement of hard-to-find semiconductors, microcontrollers, and passive components through our global network of authorized distributors and original manufacturers.",
+    icon: <Microchip className="w-12 h-12 text-orange-500 mb-4" />,
+    features: ["BOM Cross-Referencing", "Obsolete Part Sourcing", "Anti-Counterfeit Testing", "Strategic Kitting"],
+    href: "/products#component-sourcing"
+  },
+  {
+    id: 6,
+    title: "Rapid Prototyping & NPI",
+    description: "Fast-turnaround fabrication and engineering validation testing (EVT) specifically designed to help R&D teams iterate quickly before scaling to mass production.",
+    icon: <Lightbulb className="w-12 h-12 text-orange-500 mb-4" />,
+    features: ["24-48 Hour Turnaround", "Design for Manufacturing (DFM)", "Engineering Validation", "Seamless Scaling"],
+    href: "/products#prototyping"
   }
 ];
 

@@ -1,4 +1,4 @@
-import { Cpu, Factory, Zap, ShieldCheck, ArrowLeft, ArrowRight } from "lucide-react";
+import { Cpu, Factory, Zap, ShieldCheck, ArrowLeft, ArrowRight, Microchip, Lightbulb } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -19,7 +19,9 @@ export const metadata: Metadata = {
     "Bengaluru Electronics Sourcing",
     "Through-Hole Technology THT",
     "Custom Box Builds",
-    "Electronics Contract Manufacturing"
+    "Electronics Contract Manufacturing",
+    "IC Component Sourcing",
+    "Rapid PCB Prototyping"
   ].join(", "),
   openGraph: {
     title: "Electronics Procurement Products & Capabilities",
@@ -39,7 +41,7 @@ const productDetails = [
     id: "bare-pcb",
     title: "Bare Printed Circuit Boards",
     description: "From single-sided to highly complex 32+ layer architectures, we procure bare boards that meet exact mechanical and electrical specifications. Our network includes specialized manufacturers for exotic materials and high-power applications.",
-    icon: <Cpu className="w-16 h-16 text-orange-500 mb-6" />,
+    icon: <Cpu className="w-16 h-16 text-orange-500 mb-6" aria-hidden="true" />,
     specs: [
       { label: "Layer Count", value: "1 to 32+ Layers" },
       { label: "Materials", value: "High-TG FR4, Aluminum Core, Rogers (RF/Microwave), Polyimide (Flex)" },
@@ -52,7 +54,7 @@ const productDetails = [
     id: "pcba",
     title: "Turnkey PCBA Solutions",
     description: "End-to-end PCB Assembly tailored for rapid prototyping and mass manufacturing. We handle the entire BOM sourcing through our established supply chain, ensuring component authenticity and aggressive pricing before entering the assembly lines.",
-    icon: <Factory className="w-16 h-16 text-orange-500 mb-6" />,
+    icon: <Factory className="w-16 h-16 text-orange-500 mb-6" aria-hidden="true" />,
     specs: [
       { label: "Assembly Types", value: "SMT (Surface Mount), THT/DIP (Through-Hole), Mixed Technology" },
       { label: "Component Sourcing", value: "Turnkey, Partial Turnkey, Consigned" },
@@ -65,7 +67,7 @@ const productDetails = [
     id: "electromechanical",
     title: "Electromechanical Assemblies",
     description: "Moving beyond the circuit board, we provide full box-build and electromechanical integration. Our facilities can take your PCBA and assemble it into its final custom enclosure, complete with cabling and thermal management.",
-    icon: <Zap className="w-16 h-16 text-orange-500 mb-6" />,
+    icon: <Zap className="w-16 h-16 text-orange-500 mb-6" aria-hidden="true" />,
     specs: [
       { label: "Services", value: "Box Builds, Sub-assemblies, Final Integration" },
       { label: "Cabling", value: "Custom Cable Harnesses, Wire Processing, Ribbon Cables" },
@@ -78,13 +80,39 @@ const productDetails = [
     id: "hdi-bga",
     title: "Specialized HDI & BGA",
     description: "For modern, miniaturized electronics, we source from ultra-precision facilities capable of High-Density Interconnects and complex Ball Grid Array populations, ensuring high reliability in aerospace, medical, and telecom sectors.",
-    icon: <ShieldCheck className="w-16 h-16 text-orange-500 mb-6" />,
+    icon: <ShieldCheck className="w-16 h-16 text-orange-500 mb-6" aria-hidden="true" />,
     specs: [
       { label: "HDI Vias", value: "Blind, Buried, Stacked, and Staggered Microvias" },
       { label: "Laser Drilling", value: "Down to 3 mil (0.075mm) precision" },
       { label: "BGA Pitch", value: "Fine pitch down to 0.3mm" },
       { label: "Impedance Control", value: "Strict tolerance matching (±5% to ±10%)" },
       { label: "Certifications", value: "Suppliers vetted for ISO 9001, ISO 13485 (Medical), IATF 16949 (Auto)" }
+    ]
+  },
+  {
+    id: "component-sourcing",
+    title: "IC & Component Sourcing",
+    description: "Navigate global chip shortages and supply chain volatility with our dedicated IC sourcing division. We procure hard-to-find active, passive, and obsolete components directly from trusted channels to prevent production halts.",
+    icon: <Microchip className="w-16 h-16 text-orange-500 mb-6" aria-hidden="true" />,
+    specs: [
+      { label: "Sourcing Channels", value: "Authorized Franchises, Direct Factory, Vetted Independent Hubs" },
+      { label: "Component Types", value: "Microcontrollers, Memory, FPGAs, Sensors, Power ICs" },
+      { label: "Verification", value: "Anti-Counterfeit Visual & X-Ray Testing, Decapsulation available" },
+      { label: "Kitting Services", value: "Pre-packaged kits delivered directly to your assembly floor" },
+      { label: "Cross-Referencing", value: "Engineering support to find drop-in replacements for obsolete parts" }
+    ]
+  },
+  {
+    id: "prototyping",
+    title: "Rapid Prototyping & NPI",
+    description: "Accelerate your New Product Introduction (NPI) cycles. We offer rapid-turnaround fabrication and assembly for R&D engineers, providing crucial Design for Manufacturing (DFM) feedback before scaling up.",
+    icon: <Lightbulb className="w-16 h-16 text-orange-500 mb-6" aria-hidden="true" />,
+    specs: [
+      { label: "Turnaround Time", value: "24-48 hour fabrication options available" },
+      { label: "Batch Sizes", value: "From 1 piece to low-volume pilot runs" },
+      { label: "DFM/DFA Checks", value: "Comprehensive engineering review to prevent mass-production flaws" },
+      { label: "Engineering Validation", value: "Support for EVT, DVT, and PVT stages" },
+      { label: "Transition", value: "Seamless transfer of prototypes to high-volume manufacturing lines" }
     ]
   }
 ];
