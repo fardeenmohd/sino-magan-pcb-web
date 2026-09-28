@@ -45,23 +45,26 @@ export default function ProductCarousel() {
   const [canScrollRight, setCanScrollRight] = useState(true);
 
   const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const { scrollLeft, clientWidth, scrollWidth } = scrollRef.current;
-      const scrollAmount = clientWidth * 0.8;
+    if (scrollRef.current && scrollRef.current.children.length > 0) {
+      const container = scrollRef.current;
+      const card = container.children[0] as HTMLElement;
+      // Card width + gap-6 (24px)
+      const scrollAmount = card.offsetWidth + 24;
       
       const newScrollLeft = direction === "left" 
-        ? Math.max(0, scrollLeft - scrollAmount)
-        : Math.min(scrollWidth - clientWidth, scrollLeft + scrollAmount);
+        ? Math.max(0, container.scrollLeft - scrollAmount)
+        : Math.min(container.scrollWidth - container.clientWidth, container.scrollLeft + scrollAmount);
 
-      scrollRef.current.scrollTo({ left: newScrollLeft, behavior: "smooth" });
+      container.scrollTo({ left: newScrollLeft, behavior: "smooth" });
     }
   };
 
   const handleScroll = () => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth, scrollWidth } = scrollRef.current;
-      setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
+      // Add a small threshold (10px) to handle fractional pixel scrolling rounding issues
+      setCanScrollLeft(Math.ceil(scrollLeft) > 10);
+      setCanScrollRight(Math.ceil(scrollLeft + clientWidth) < scrollWidth - 10);
     }
   };
 
@@ -95,11 +98,11 @@ export default function ProductCarousel() {
       <div 
         ref={scrollRef}
         onScroll={handleScroll}
-        className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4 sm:mx-0 sm:px-0"
+        className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4 sm:mx-0 sm:px-0 touch-pan-x"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {products.map((product) => (
-          <div key={product.id} className="min-w-[85vw] sm:min-w-[350px] md:min-w-[400px] flex-shrink-0 snap-center bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full">
+          <div key={product.id} className="w-[85vw] sm:w-[350px] md:w-[400px] flex-shrink-0 snap-center bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full">
             {product.icon}
             <h3 className="text-xl font-bold text-[#001d3d] mb-3">{product.title}</h3>
             <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">{product.description}</p>
