@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Activity, Cpu, Globe, Link2, ShieldCheck, Zap, Factory, PackageCheck } from "lucide-react";
 
 export default function Home() {
@@ -7,9 +8,12 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-[#001d3d]/90 backdrop-blur-md border-b border-slate-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-xl tracking-wide text-white">SINO MAGAN INDUS</span>
-              <span className="text-[10px] text-orange-500 tracking-widest uppercase font-semibold">PCB Trade Division</span>
+            <div className="flex items-center gap-3">
+              <Image src="/logo.png" alt="Sino Magan Logo" width={40} height={40} className="object-contain" />
+              <div className="flex flex-col">
+                <span className="font-serif font-bold text-xl tracking-wide text-white">SINO MAGAN INDUS</span>
+                <span className="text-[10px] text-orange-500 tracking-widest uppercase font-semibold">PCB Trade Division</span>
+              </div>
             </div>
             <div className="hidden md:flex space-x-8 items-center">
               <a href="#capabilities" className="text-sm font-medium hover:text-orange-400 transition-colors">Capabilities</a>
@@ -243,9 +247,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-slate-300">
             <div>
-              <div className="flex flex-col mb-6">
-                <span className="font-serif font-bold text-xl tracking-wide text-white">SINO MAGAN INDUS</span>
-                <span className="text-[10px] text-orange-500 tracking-widest uppercase font-semibold">Global Trade LLP</span>
+              <div className="flex items-center gap-3 mb-6">
+                <Image src="/logo.png" alt="Sino Magan Logo" width={48} height={48} className="object-contain" />
+                <div className="flex flex-col">
+                  <span className="font-serif font-bold text-xl tracking-wide text-white">SINO MAGAN INDUS</span>
+                  <span className="text-[10px] text-orange-500 tracking-widest uppercase font-semibold">Global Trade LLP</span>
+                </div>
               </div>
               <p className="text-sm leading-6">
                 Leading the way in global electronics trade, connecting high-tech manufacturers in the East to emerging markets worldwide through integrity and logistical excellence.

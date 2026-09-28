@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Globe, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -8,9 +9,12 @@ export default function ContactPage() {
       <nav className="bg-[#001d3d] border-b border-slate-700 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
-            <Link href="/" className="flex flex-col group">
-              <span className="font-serif font-bold text-xl tracking-wide text-white group-hover:text-orange-400 transition-colors">SINO MAGAN INDUS</span>
-              <span className="text-[10px] text-orange-500 tracking-widest uppercase font-semibold">PCB Trade Division</span>
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image src="/logo.png" alt="Sino Magan Logo" width={40} height={40} className="object-contain" />
+              <div className="flex flex-col">
+                <span className="font-serif font-bold text-xl tracking-wide text-white group-hover:text-orange-400 transition-colors">SINO MAGAN INDUS</span>
+                <span className="text-[10px] text-orange-500 tracking-widest uppercase font-semibold">PCB Trade Division</span>
+              </div>
             </Link>
             <div className="flex space-x-8 items-center">
               <Link href="/" className="text-sm font-medium text-slate-300 hover:text-white transition-colors flex items-center gap-2">
